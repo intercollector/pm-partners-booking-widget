@@ -1,15 +1,18 @@
-# OOP WordPress Plugin Boilerplate
+# PM Partners Booking Widget
 
-* Contributors: [Mehdi Soltani](https://wpwebmaster.ir/author/mehdi-soltani/)
+* Author: Scott Johnston
 
 ## Description
 
-This repository contains a plugin boilerplate that its structure is based on OOP.
-So if you feel better with writing code in OOP way, it's perfect choice to use it.
-Everything in this boilerplate is being created by OOP concepts and then combined with WordPress concepts.
+This repository contains a wordpress plugin that implements a widget for PM Partners E-Commerce website. The plugin allows a shortcode to be added to a product page, where the end user can search for dates and locations of courses, and then add those to a woo-commerce cart. The high-level features of the widget are:
+
+* Implement a custom shortcode with product Ids as parameters that can be added to any custom product page (specs for the shortcode below).
+* Based upon the product code provided as a parameter, display dates and locations of the events as configured in WooCommerce/FooEvents.
+* Implements a fixed CSS styling based upon the PM Partners theme
+* Mobile friendly
  
 
-## 🚦 Explanation about plugin structure
+## 🚦 Structure
 
 ### Plugin directories and files:
 
@@ -18,21 +21,16 @@ Everything in this boilerplate is being created by OOP concepts and then combine
 In the root directory, you can see these subdirectories:
 
 #### 1. assets
-All assets files locates in this directory. For admin assets, I consider a separated directory.
-It contains all of CSS, JS and images files which the plugin needs to use them. 
+Contains all of CSS, JS and images files which the plugin needs to use them. 
 
 #### 2. includes
 All classes related to this plugin is located in this directory. 
 
-#### 3. languages
-Files that the plugin needs for internationalization is located in language directory.
+#### 3. templates
+HTML templates
 
-#### 4. logs
-For many reasons, we need to log some processes like errors or doing repeating tasks.
-For this reason, I decided to have a separeted directory. 
-
-#### 5. templates
-For separating view part, I use template directory. So if I need to render any HTML files in front end or back end, I ues this directory.
+## Usage - Shortcode
+<<TBD>>
 
 
 
