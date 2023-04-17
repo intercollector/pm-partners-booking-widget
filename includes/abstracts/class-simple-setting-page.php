@@ -12,9 +12,9 @@
  * @since      1.0.2
  */
 
-namespace Plugin_Name_Name_Space\Includes\Abstracts;
+namespace PMPartnersBookingWidget\Includes\Abstracts;
 
-use Plugin_Name_Name_Space\Includes\Interfaces\Action_Hook_Interface;
+use PMPartnersBookingWidget\Includes\Interfaces\Action_Hook_Interface;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

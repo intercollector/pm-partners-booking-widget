@@ -12,11 +12,11 @@
  * @since      1.0.2
  */
 
-namespace Plugin_Name_Name_Space\Includes\Abstracts;
+namespace PMPartnersBookingWidget\Includes\Abstracts;
 
-use Plugin_Name_Name_Space\Includes\Functions\Template_Builder;
-use Plugin_Name_Name_Space\Includes\Interfaces\Action_Hook_Interface;
-use Plugin_Name_Name_Space\Includes\Abstracts\Option_Menu;
+use PMPartnersBookingWidget\Includes\Functions\Template_Builder;
+use PMPartnersBookingWidget\Includes\Interfaces\Action_Hook_Interface;
+use PMPartnersBookingWidget\Includes\Abstracts\Option_Menu;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

@@ -11,7 +11,7 @@
  * @since      1.0.2
  */
 
-namespace Plugin_Name_Name_Space\Includes\Functions;
+namespace PMPartnersBookingWidget\includes\functions;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

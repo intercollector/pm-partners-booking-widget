@@ -5,17 +5,9 @@
  * This file contains contract for Shortcode class.
  * If you want to create a shortcode, you must use from this contract.
  *
- * @package    Plugin_Name_Name_Space
- * @author     Mehdi Soltani <soltani.n.mehdi@gmail.com>
- * @license    https://www.gnu.org/licenses/gpl-3.0.txt GNU/GPLv3
- * @link       https://github.com/msn60/oop-wordpress-plugin-boilerplate
- * @since      1.0.2
+ * @see        https://kinsta.com/blog/wordpress-shortcodes/
  */
 
-namespace Plugin_Name_Name_Space\Includes\Abstracts;
-
-
-use Plugin_Name_Name_Space\Includes\Interfaces\Action_Hook_Interface;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -27,20 +19,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * This file contains contract for Shortcode class.
  * If you want to create a shortcode, you must use from this contract.
  *
- * @package    Plugin_Name_Name_Space
- * @author     Mehdi Soltani <soltani.n.mehdi@gmail.com>
- * @link       https://github.com/msn60/oop-wordpress-plugin-boilerplate
- *
- * @see        https://developer.wordpress.org/plugins/shortcodes/shortcodes-with-parameters/
- * @see        https://code.tutsplus.com/articles/create-wordpress-plugins-with-oop-techniques--net-20153
- * @see        https://www.smashingmagazine.com/2012/05/wordpress-shortcodes-complete-guide/
- * @see        https://speckyboy.com/getting-started-with-wordpress-shortcodes-examples/
- * @see        https://wpshout.com/how-to-create-wordpress-shortcodes/
- * @see        https://codex.wordpress.org/Shortcode_API
- * @see        https://en.support.wordpress.com/shortcodes/
- * @see        https://kinsta.com/blog/wordpress-shortcodes/
  */
-abstract class Shortcode implements Action_Hook_Interface {
+abstract class Shortcode {
 
 	/**
 	 * The name of the [$tag]
@@ -85,15 +65,7 @@ abstract class Shortcode implements Action_Hook_Interface {
 		$this->default_atts = $initial_values['default_atts'];
 		$this->atts         = [];
 		$this->content      = null;
-	}
-
-	/**
-	 * call 'init' add_action to register add_shortcut in correct place
-	 *
-	 * @access public
-	 */
-	public function register_add_action() {
-		add_action( 'init', array( $this, 'register_shortcode' ) );
+                $this->register_shortcode();
 	}
 
 	/**
