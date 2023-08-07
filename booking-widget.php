@@ -20,7 +20,6 @@
 
 
 include(plugin_dir_path(__FILE__).'includes/product-shortcode.php');
-include(plugin_dir_path(__FILE__).'includes/product-bundle-shortcode.php');
 /**
  * If this file is called directly, then abort execution.
  */
@@ -166,7 +165,6 @@ final class BookingWidget {
 	 */
 	public function run_plugin_booking_widget() {
             new ProductShortcode(['tag'=>'pmproducts','default_atts'=>[]]);
-            new ProductBundleShortcode(['tag'=>'pmproductbundle','default_artts'=>[]]);
             
 	}
 }
@@ -180,6 +178,115 @@ function booking_scripts() {
 
 }
 
+add_action('admin_enqueue_scripts', 'admin_scripts');
+function admin_scripts() {
+	wp_enqueue_script('wp-admin','https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js', false, null, 'all');
+	wp_enqueue_style('wp-admin-style1','https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css');
+	wp_enqueue_style('wp-admin-style2', plugin_dir_url(__FILE__).'assets/css/pm-partners-booking-admin.css');
+}
+
+
 
 $plugin_name_plugin_object = BookingWidget::instance();
 $plugin_name_plugin_object->run_plugin_booking_widget();
+
+add_filter( 'wc_product_has_unique_sku', '__return_false' ); 
+
+add_filter( 'woocommerce_attribute_label', 'custom_attribute_label', 10, 3 );
+function custom_attribute_label( $label, $name, $product ) {
+    // For "pa_farge" attribute taxonomy on single product pages.
+    if( $name == 'startdate' ) {
+        $label = __('Start', 'woocommerce');
+    }
+    if( $name == 'enddate' ) {
+        $label = __('End', 'woocommerce');
+    }
+    return $label;
+}
+
+add_filter( 'woocommerce_product_data_tabs', 'booking_widget_admin', 10, 6 );
+
+function booking_widget_admin( $default_tabs ) {
+    $default_tabs['my_tab'] = array(
+        'label'   =>  __( 'Workshops', 'domain' ),
+        'target'  =>  'booking_widget_tab_data',
+        'priority' => 1
+    );
+    return $default_tabs;
+}
+add_action( 'woocommerce_product_data_panels', 'booking_widget_tab_data' );
+function booking_widget_tab_data() {
+	?>
+    <div id="booking_widget_tab_data" class="panel woocommerce_options_panel">
+    <?php
+	$product = wc_get_product(get_the_ID());
+	if($product->is_type('variable')){
+		$raw_ws = $product->get_available_variations('objects');
+		$workshops = filterAndFormatWorkshops($raw_ws);
+		wp_add_inline_script('wp-admin','var workshops='.json_encode($workshops));
+		wp_add_inline_script('wp-admin','var product_id='.get_the_ID());
+		wp_add_inline_script('wp-admin','var workshop_cnt='.json_encode($raw_ws));
+
+		ob_start();
+		include plugin_dir_path(__FILE__).'/templates/workshop-admin-html.php';
+
+		$result = ob_get_clean();
+		echo $result;
+	}
+	?></div><?php
+}
+
+ function hide_edit_book_update(){ 
+	$product = wc_get_product();
+     if($product){
+		 if($product->is_type('variable')){
+			?>
+			  <style type="text/css">#major-publishing-actions #publish {display:none;}</style>
+            <?php
+		 }
+	 }
+}
+//add_action( 'admin_enqueue_scripts', 'hide_edit_book_update' );
+
+function filterAndFormatWorkshops($wcVariations){
+	$courses = [];
+	foreach($wcVariations as $value){
+		//if($value->is_purchasable()){
+			$course = 
+				['wc_product_id'=>$value->get_id(),
+				 'location'=>$value->get_attribute('location'),
+				 'workshopid'=>$value->get_attribute('workshopid'),
+				 'type'=>$value->get_attribute('type'),
+				 'name'=>$value->get_name(),
+				 'price'=>$value->get_price(),
+				 'sale-price'=>'',
+				 'stock-warning'=>''
+				];
+			if($value->get_attribute('StartDate') == $value->get_attribute('EndDate')){
+				$course['dates'] = $value->get_attribute('StartDate');
+			} else {
+				$course['dates'] = $value->get_attribute('StartDate'). ' - '.$value->get_attribute('EndDate');
+			}
+			$dt = DateTime::createFromFormat('d/m/Y', $value->get_attribute('StartDate'));
+			if(!$dt){
+				$dt = DateTime::createFromFormat('Ymd', $value->get_attribute('StartDate'));
+			}
+			$course['dt'] = $dt ? $dt->format('Y-m-d') : "Error parsing date";
+			
+			if($dt && $dt->getTimestamp() > time()){
+				$course['expired'] = 'false';
+			} else {
+				$course['expired'] = 'true';
+			}
+			if($value->is_on_sale()){
+				$course['price'] = $value->get_regular_price();
+				$course['sale-price'] = $value->get_sale_price();
+			}
+			if($value->managing_stock() && $value->get_stock_quantity() < 6){
+				$course['stock-warning'] = $value->get_stock_quantity();
+			}
+			$courses[] = $course;
+		//}
+	}
+	return $courses;
+}

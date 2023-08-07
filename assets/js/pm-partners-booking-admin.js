@@ -1,4 +1,5 @@
 function apply_filters(){
+	jQuery('#stripe-logo').show();
 	var typeSelection = (jQuery('[name="type"]').length > 0) ? jQuery('[name="type"]')[0].value: null;
 	var locationSelection = (jQuery('[name="location"]').length > 0) ? jQuery('[name="location"]')[0].value: null;
 	courseList.forEach(element => {
@@ -50,7 +51,7 @@ jQuery(".pick-dates").click(function(){
 });
 
 jQuery(".date-select:radio").click(function(){
-	var bookNowButton = jQuery(this).parent().parent().parent().find("a.pmpbooking-register");
+	var bookNowButton = jQuery(this).parent().parent().parent().find("a.arlo-register");
 	var url = new URL(bookNowButton.attr("href"), window.location.origin);
 	var option_id = jQuery(this).attr('optionid');
 	url.searchParams.set('bundle_variation_id_'+option_id, jQuery(this).attr("productid"));
@@ -66,12 +67,12 @@ jQuery(".date-select:radio").click(function(){
 function apply_bundle_filters(){
 	var locationSelection = jQuery('[name="location"]')[0].value;
 	
-	jQuery('.bundles .pmpbooking-location').html(locationSelection);
-	jQuery('.bundles .pmpbooking-list').css("display","flex");
-	jQuery('.bundles .pmpbooking-event').css("padding","0 20 0 20");
-	jQuery('.bundles .pmpbooking-event').css("display","inline-block");
-	jQuery('.bundles .pmpbooking-name').css("width","60%");
-	jQuery('.bundles .pmpbooking-name').css("min-width","250px");
+	jQuery('.bundles .arlo-location').html(locationSelection);
+	jQuery('.bundles .arlo-list').css("display","flex");
+	jQuery('.bundles .arlo-event').css("padding","0 20 0 20");
+	jQuery('.bundles .arlo-event').css("display","inline-block");
+	jQuery('.bundles .arlo-name').css("width","60%");
+	jQuery('.bundles .arlo-name').css("min-width","250px");
 
 	Object.keys(bundleList).forEach(key=>{Object.keys(bundleList[key]).forEach(key2=>{
 		var course = bundleList[key][key2];

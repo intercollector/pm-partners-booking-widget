@@ -66,7 +66,7 @@ class ProductShortcode extends Shortcode {
 			}
 		}
 		$courseList = $this->filterAndFormatCourseList($courseList);
-
+        usort($courseList, fn($a, $b) => $a['dt'] <=> $b['dt']);
 		$courseTypes = $this->getCourseTypes($courseList);
 		$courseLocations = $this->getCourseLocations($courseList);
 		if(count($bundleList) > 0){
@@ -110,18 +110,24 @@ class ProductShortcode extends Shortcode {
 				 'price'=>$value->get_price()
 				];
 				if($value->get_attribute('StartDate') == $value->get_attribute('EndDate')){
-					$course['dates'] = $value->get_attribute('StartDate');
+					$course['dates'] = $this->dateDisplayFormat($value->get_attribute('StartDate'));
 				} else {
-					$course['dates'] = $value->get_attribute('StartDate'). ' - '.$value->get_attribute('EndDate');
+					$course['dates'] = $this->dateDisplayFormat($value->get_attribute('StartDate')). ' - '.$this->dateDisplayFormat($value->get_attribute('EndDate'));
 				}
+				$course['dt'] = $this->dateSortFormat($value->get_attribute('StartDate'));
 				if($value->is_on_sale()){
 					$course['price'] = $value->get_regular_price();
 					$course['sale-price'] = $value->get_sale_price();
 				}
-				if($value->managing_stock() && $value->get_stock_quantity() < $value->get_low_stock_amount()){
+				if($value->managing_stock() && $value->get_stock_quantity() <= 500){
 					$course['stock-warning'] = $value->get_stock_quantity();
 				}
-				$courses[] = $course;
+				if($course['dt'] != ''){
+					$dt = DateTime::createFromFormat('Y-m-d', $course['dt']);
+					if($dt->getTimestamp() > time()){
+						$courses[] = $course;
+					}
+				}
 			}
 		}
 		return $courses;
@@ -183,22 +189,70 @@ class ProductShortcode extends Shortcode {
 		foreach($productsInBundle as $bundledItem){
 			$product = $bundledItem->get_product();
 			$variations = $product->get_available_variations('objects');
+			$variation_options = [];
 			foreach($variations as $variation){
 				$course = [];
 				$course['wc_product_id'] = $variation->get_id();
 				$course['StartDate'] = $variation->get_attribute('StartDate');
 				$course['EndDate'] = $variation->get_attribute('EndDate');
 				$course['type'] = $variation->get_attribute('type');
+				$course['WorkshopId'] = $variation->get_attribute('WorkshopId');
 				if($variation->get_attribute('StartDate') == $variation->get_attribute('EndDate')){
-					$course['dates'] = $variation->get_attribute('StartDate');
+					$course['dates'] = $this->dateDisplayFormat($variation->get_attribute('StartDate'));
 				} else {
-					$course['dates'] = $variation->get_attribute('StartDate'). ' - '.$variation->get_attribute('EndDate');
+					$course['dates'] = $this->dateDisplayFormat($variation->get_attribute('StartDate')). ' - '.$this->dateDisplayFormat($variation->get_attribute('EndDate'));
 				}
-				$bundles[$variation->get_attribute('location')][$bundledItem->get_id()][] = $course;
+				
+				$course['dt'] = $this->dateSortFormat($variation->get_attribute('StartDate'));
+				
+				if($course['dt'] != ''){
+					$dt = DateTime::createFromFormat('Y-m-d', $course['dt']);
+					if($dt->getTimestamp() > time()){
+						$bundles[$variation->get_attribute('location')][$bundledItem->get_id()][] = $course;
+					}
+				}
 			}
+			foreach($bundles as &$bundle){
+				foreach($bundle as &$bundledItem){
+					usort($bundledItem, fn($a, $b) => $a['dt'] <=> $b['dt']);
+				}
+				unset($bundledItem);
+			}
+			unset($bundle);
+			
 		}
 		return $bundles;
 	}
+	/**
+	 * dateSortFormat - provided a variations date attribute, converts it into proper date format
+	 *
+	 * @param array  $dt
+	 *
+	 * @return string - the date formatted in d/m/Y as the display format for the front-end
+	 */
+	function dateDisplayFormat($dt){
+		//first look for an original format...can be deprecated once old dates are gone
+		$dtObj = DateTime::createFromFormat('d/m/Y', $dt);
+		if($dtObj == null){
+			$dtObj = DateTime::createFromFormat('Ymd', $dt);
+		}
+		return $dtObj ? $dtObj->format('d/m/Y') : "";
+	}
+	/**
+	 * dateSortFormat - provided a variations date attribute, converts it into proper date format
+	 *
+	 * @param array  $dt
+	 *
+	 * @return string - the date formatted in Y-m-d format for easier sorting
+	 */
+	function dateSortFormat($dt){
+		//first look for an original format...can be deprecated once old dates are gone
+		$dtObj = DateTime::createFromFormat('d/m/Y', $dt);
+		if($dtObj == null){
+			$dtObj = DateTime::createFromFormat('Ymd', $dt);
+		}
+		return $dtObj ? $dtObj->format('Y-m-d') : "";
+	}				
 	/**
 	 * getBundleOptions - provided a list of products with options, as a JSON List for the front-end to easily consume
 	 *
@@ -238,7 +292,7 @@ class ProductShortcode extends Shortcode {
 						$course['price'] = $variation->get_regular_price();
 						$course['sale-price'] = $variation->get_sale_price();
 					}
-					if($variation->managing_stock() && $variation->get_stock_quantity() < $variation->get_low_stock_amount()){
+					if($variation->managing_stock() && $variation->get_stock_quantity() <= 500){
 						$course['stock-warning'] = $variation->get_stock_quantity();
 					}
 

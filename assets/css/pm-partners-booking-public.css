@@ -1,1 +1,2403 @@
+/*  Theme3 - Jazz
+    Overrides all theme styles
+*/
+
+/*
+color1: #f46f72;
+color2: #f8f8f8;
+color3: #383838;
+color4: #f9b3b3;
+*/
+
+
+/* Normalize.css */
+
+body.pmpbooking {
+    margin: 0;
+}
+
+.pmpbooking#pmpbooking article,
+.pmpbooking#pmpbooking aside,
+.pmpbooking#pmpbooking details,
+.pmpbooking#pmpbooking figcaption,
+.pmpbooking#pmpbooking figure,
+.pmpbooking#pmpbooking footer,
+.pmpbooking#pmpbooking header,
+.pmpbooking#pmpbooking main,
+.pmpbooking#pmpbooking menu,
+.pmpbooking#pmpbooking nav,
+.pmpbooking#pmpbooking section,
+.pmpbooking#pmpbooking summary {
+    display: block;
+}
+
+.pmpbooking#pmpbooking audio,
+.pmpbooking#pmpbooking canvas,
+.pmpbooking#pmpbooking progress,
+.pmpbooking#pmpbooking video {
+    display: inline-block;
+}
+
+.pmpbooking#pmpbooking audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+.pmpbooking#pmpbooking progress {
+    vertical-align: baseline;
+}
+
+.pmpbooking#pmpbooking template,
+.pmpbooking#pmpbooking [hidden] {
+    display: none;
+}
+
+.pmpbooking#pmpbooking a {
+    background-color: transparent;
+    /* 1 */
+    -webkit-text-decoration-skip: objects;
+    /* 2 */
+}
+
+.pmpbooking#pmpbooking a:active,
+.pmpbooking#pmpbooking a:hover {
+    outline-width: 0;
+}
+
+.pmpbooking#pmpbooking abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+.pmpbooking#pmpbooking b,
+.pmpbooking#pmpbooking strong {
+    font-weight: inherit;
+}
+
+.pmpbooking#pmpbooking b,
+.pmpbooking#pmpbooking strong {
+    font-weight: bolder;
+}
+
+.pmpbooking#pmpbooking code,
+.pmpbooking#pmpbooking kbd,
+.pmpbooking#pmpbooking samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+.pmpbooking#pmpbooking dfn {
+    font-style: italic;
+}
+
+.pmpbooking#pmpbooking mark {
+    background-color: #ff0;
+    color: #000;
+}
+
+.pmpbooking#pmpbooking small {
+    font-size: 80%;
+}
+
+.pmpbooking#pmpbooking sub,
+.pmpbooking#pmpbooking sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.pmpbooking#pmpbooking sub {
+    bottom: -0.25em;
+}
+
+.pmpbooking#pmpbooking sup {
+    top: -0.5em;
+}
+
+.pmpbooking#pmpbooking img {
+    border-style: none;
+}
+
+.pmpbooking#pmpbooking svg:not(:root) {
+    overflow: hidden;
+}
+
+.pmpbooking#pmpbooking figure {
+    margin: 1.5em 40px;
+}
+
+.pmpbooking#pmpbooking hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+.pmpbooking#pmpbooking pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+.pmpbooking#pmpbooking button,
+.pmpbooking#pmpbooking input,
+.pmpbooking#pmpbooking optgroup,
+.pmpbooking#pmpbooking select,
+.pmpbooking#pmpbooking textarea {
+    font: inherit;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+.pmpbooking#pmpbooking button {
+    overflow: visible;
+}
+
+.pmpbooking#pmpbooking button,
+.pmpbooking#pmpbooking select {
+    /* 1 */
+    text-transform: none;
+}
+
+.pmpbooking#pmpbooking button,
+.pmpbooking#pmpbooking html [type="button"],
+.pmpbooking#pmpbooking [type="reset"],
+.pmpbooking#pmpbooking [type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+}
+
+.pmpbooking#pmpbooking button,
+.pmpbooking#pmpbooking [type="button"],
+.pmpbooking#pmpbooking [type="reset"],
+.pmpbooking#pmpbooking [type="submit"] {
+    /**
+     * Remove the inner border and padding in Firefox.
+     */
+    /**
+     * Restore the focus styles unset by the previous rule.
+     */
+}
+
+.pmpbooking#pmpbooking button::-moz-focus-inner,
+.pmpbooking#pmpbooking [type="button"]::-moz-focus-inner,
+.pmpbooking#pmpbooking [type="reset"]::-moz-focus-inner,
+.pmpbooking#pmpbooking [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+.pmpbooking#pmpbooking button:-moz-focusring,
+.pmpbooking#pmpbooking [type="button"]:-moz-focusring,
+.pmpbooking#pmpbooking [type="reset"]:-moz-focusring,
+.pmpbooking#pmpbooking [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+.pmpbooking#pmpbooking input {
+    overflow: visible;
+}
+
+.pmpbooking#pmpbooking [type="checkbox"],
+.pmpbooking#pmpbooking [type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+.pmpbooking#pmpbooking [type="number"]::-webkit-inner-spin-button,
+.pmpbooking#pmpbooking [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+.pmpbooking#pmpbooking [type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+    /**
+     * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+     */
+}
+
+.pmpbooking#pmpbooking [type="search"]::-webkit-search-cancel-button,
+.pmpbooking#pmpbooking [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+.pmpbooking::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+.pmpbooking::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+}
+
+.pmpbooking#pmpbooking fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+.pmpbooking#pmpbooking legend {
+    box-sizing: border-box;
+    /* 1 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    white-space: normal;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    padding: 0;
+    /* 3 */
+}
+
+.pmpbooking#pmpbooking optgroup {
+    font-weight: bold;
+}
+
+.pmpbooking#pmpbooking textarea {
+    overflow: auto;
+}
+
+
+
+/* Custom resets */
+
+.pmpbooking#pmpbooking * {
+    box-sizing: border-box;
+}
+
+.pmpbooking#pmpbooking h1,
+.pmpbooking#pmpbooking h2,
+.pmpbooking#pmpbooking h3,
+.pmpbooking#pmpbooking h4,
+.pmpbooking#pmpbooking h5,
+.pmpbooking#pmpbooking h6,
+.pmpbooking#pmpbooking p {
+    clear: none;
+}
+
+.pmpbooking#pmpbooking img {
+    max-width: 100%;
+}
+
+
+
+/* Fonts */
+
+.pmpbooking#pmpbooking .fa {
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+
+
+/* All lists */
+
+.pmpbooking#pmpbooking .pmpbooking-list,
+.pmpbooking#pmpbooking .pmpbooking-category-list,
+.pmpbooking#pmpbooking .pmpbooking-event-credits,
+.pmpbooking#pmpbooking .pmpbooking-event-template-credits,
+.pmpbooking#pmpbooking .pmpbooking-event_tags-list,
+.pmpbooking#pmpbooking .presenter-events,
+.pmpbooking#pmpbooking .pmpbooking-address-list,
+.pmpbooking-categories-widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list li,
+.pmpbooking#pmpbooking .pmpbooking-category-list li,
+.pmpbooking#pmpbooking .pmpbooking-event-credits li,
+.pmpbooking#pmpbooking .pmpbooking-event-template-credits li,
+.pmpbooking#pmpbooking .pmpbooking-event_tags-list li,
+.pmpbooking#pmpbooking .presenter-events li,
+.pmpbooking#pmpbooking .pmpbooking-address-list li,
+.pmpbooking-categories-widget li {
+    list-style: inherit;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.pmpbooking-cols-5 > li {
+    width: 19.5%;
+    margin-right: 0.5%;
+    float: left;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.pmpbooking-cols-4 > li {
+    width: 24.5%;
+    margin-right: 0.5%;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.pmpbooking-cols-3 > li {
+    width: 32.5%;
+    margin-right: 0.5%;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.pmpbooking-cols-2 > li {
+    width: 49.5%;
+    margin-right: 0.5%;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.pmpbooking-cols-1 > li {
+    width: 100%;
+}
+
+
+
+
+/* Buttons */
+
+.pmpbooking#pmpbooking .pmpbooking-button,
+.pmpbooking#pmpbooking .button,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running a,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link a,
+.pmpbooking#pmpbooking a.prev.page-numbers,
+.pmpbooking#pmpbooking a.next.page-numbers,
+.pmpbooking#pmpbooking .pmpbooking-category-list a,
+.pmpbooking#pmpbooking select,
+.pmpbooking#pmpbooking select:focus,
+.pmpbooking#pmpbooking .pmpbooking-filters-buttons a,
+.pmpbooking#pmpbooking a.pmpbooking-show-more-link,
+.pmpbooking#pmpbooking .pmpbooking-social-media a {
+    padding: .5em 1em;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    margin-right: 0;
+    height: auto;
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    border: none;
+    box-shadow: none;
+    line-height: 1.5;
+}
+
+@media (min-width: 550px) {
+    .pmpbooking#pmpbooking .pmpbooking-button,
+    .pmpbooking#pmpbooking .button,
+    .pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a,
+    .pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running span,
+    .pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running a,
+    .pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running span,
+    .pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a,
+    .pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running span,
+    .pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link a,
+    .pmpbooking#pmpbooking a.prev.page-numbers,
+    .pmpbooking#pmpbooking a.next.page-numbers,
+    .pmpbooking#pmpbooking .pmpbooking-category-list a,
+    .pmpbooking#pmpbooking select,
+    .pmpbooking#pmpbooking .pmpbooking-filters-buttons a,
+    .pmpbooking#pmpbooking a.pmpbooking-show-more-link,
+    .pmpbooking#pmpbooking .pmpbooking-social-media a {
+        display: inline-block;
+    }
+}
+
+.pmpbooking#pmpbooking .pmpbooking-button:after,
+.pmpbooking#pmpbooking .button:after,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a:after,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running a:after,
+.pmpbooking#pmpbooking .prev.page-numbers:after,
+.pmpbooking#pmpbooking .next.page-numbers:after,
+.pmpbooking#pmpbooking .pmpbooking-category-list a:after,
+.pmpbooking#pmpbooking .pmpbooking-show-more-link:after,
+.pmpbooking#pmpbooking .pmpbooking-social-media a:after,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a:after,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link a:after,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    -webkit-transition: width .3s;
+    -moz-transition: width .3s;
+    transition: width .3s;
+    background: rgba(0,0,0,.05);
+}
+
+.pmpbooking#pmpbooking .pmpbooking-button:hover,
+.pmpbooking#pmpbooking .button:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running span:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running a:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running span:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running span:hover,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link a:hover,
+.pmpbooking#pmpbooking a.prev.page-numbers:hover,
+.pmpbooking#pmpbooking a.next.page-numbers:hover,
+.pmpbooking#pmpbooking .pmpbooking-category-list a:hover,
+.pmpbooking#pmpbooking select:hover,
+.pmpbooking#pmpbooking .pmpbooking-filters-buttons a:hover,
+.pmpbooking#pmpbooking a.pmpbooking-show-more-link:hover,
+.pmpbooking#pmpbooking .pmpbooking-social-media a:hover {
+    text-decoration: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-button:hover:after,
+.pmpbooking#pmpbooking .button:hover:after,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a:hover:after,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running a:hover:after,
+.pmpbooking#pmpbooking .prev.page-numbers:hover:after,
+.pmpbooking#pmpbooking .next.page-numbers:hover:after,
+.pmpbooking#pmpbooking .pmpbooking-category-list a:hover:after,
+.pmpbooking#pmpbooking .pmpbooking-show-more-link:hover:after,
+.pmpbooking#pmpbooking .pmpbooking-social-media a:hover:after,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a:hover:after,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link a:hover:after,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a:hover:after {
+    width: 100%;
+}
+
+
+
+/* Catalogue */
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf {
+   overflow: auto;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf.pmpbooking-catalogue-event,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates tr,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates tr td:first-of-type {
+   border-left: 2px solid;
+   -webkit-transition: all .2s ease-in-out;
+   transition: all .2s ease-in-out;
+   margin-bottom: 1px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf.pmpbooking-catalogue-event:hover,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates tr:hover,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates tr:hover td:first-of-type {
+    border-left-width: 7px;
+    background-color: #f1f1f1;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf.pmpbooking-group-divider {
+   background-color: transparent;
+   margin-top: 1em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf.pmpbooking-group-divider h2 {
+    font-weight: bold;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf .pmpbooking-catalogue-column,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container tr td {
+    padding: .5em 1em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-category-list li a {
+    display: block;
+    margin-bottom: .5em;
+}
+
+@media (min-width: 750px) {
+    .pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf .pmpbooking-catalogue-column  {
+        float: left;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf .pmpbooking-catalogue-details {
+        width: 80%;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf .pmpbooking-catalogue-column.pmpbooking-event-name {
+        width: 80%;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf .pmpbooking-catalogue-column.pmpbooking-template-details {
+        width: 20%;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf .pmpbooking-catalogue-column.pmpbooking-next-running {
+        width: 20%;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-category-list li {
+        display: inline-block;
+        margin-right:  .5em;
+    }
+}
+
+@media (min-width: 550px) {
+    .pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf .pmpbooking-catalogue-details {
+        width: 70%;
+        float: left;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf .pmpbooking-catalogue-column.pmpbooking-next-running {
+        text-align: right;
+        float: right;
+        width: 30%;
+    }
+
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a,
+.pmpbooking#pmpbooking .pmpbooking-category-list a {
+    background-color: white;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-category-footer {
+    margin: 2em 0;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-category-header {
+    margin-bottom: 2em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-offers,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-offers,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-duration {
+    opacity: .5;
+}
+
+
+
+/* Upcoming events list */
+
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming > li {
+    margin-bottom: 3em;
+    padding: 0;
+    border: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-cal {
+    width: 60px;
+    float: left;
+    border-right: 2px solid transparent;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    font-size: 1.4em;
+    padding: 1em .25em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-event-details {
+    max-width: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-event-registration {
+    text-align: left;
+}
+
+.pmpbooking#pmpbooking .upcoming .pmpbooking-cal .pmpbooking-day {
+    font-size: 2em;
+}
+
+.pmpbooking#pmpbooking .upcoming .pmpbooking-event-info {
+    margin-left: 75px;
+}
+
+@media (min-width: 550px) {
+    .pmpbooking#pmpbooking .pmpbooking-cal {
+        width: 90px;
+        font-size: 2em;
+    }
+
+    .pmpbooking#pmpbooking .upcoming .pmpbooking-event-info {
+        margin-left: 115px;
+    }
+}
+
+.pmpbooking#pmpbooking .upcoming .pmpbooking-event-name,
+.pmpbooking#pmpbooking .pmpbooking-online-activities .pmpbooking-event-name {
+    margin-top: 0;
+}
+
+.pmpbooking#pmpbooking .upcoming .pmpbooking-event-subhead {
+    margin-bottom: .5em;
+}
+
+.pmpbooking#pmpbooking .upcoming .pmpbooking-event-subhead > div {
+    display: inline-block;
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+.pmpbooking#pmpbooking .upcoming .pmpbooking-event-notice {
+    margin-bottom: .5em;
+}
+
+.pmpbooking#pmpbooking .upcoming .pmpbooking-template-summary {
+    margin-bottom: .5em;
+}
+
+.pmpbooking#pmpbooking .upcoming .pmpbooking-offers {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.pmpbooking#pmpbooking .upcoming .pmpbooking-offers .pmpbooking-price-tax {
+    font-size: .8em;
+}
+
+.pmpbooking#pmpbooking .upcoming .pmpbooking-cf.pmpbooking-group-divider,
+.pmpbooking#pmpbooking .pmpbooking-online-activities .pmpbooking-cf.pmpbooking-group-divider {
+    margin-bottom: .75em;
+    margin-top: 1em;
+    font-weight: bold;
+    padding: 0;
+}
+
+.pmpbooking#pmpbooking .upcoming .pmpbooking-event-full,
+.pmpbooking#pmpbooking .upcoming .pmpbooking-places-remaining {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: .5em;
+    font-size: 1em;
+}
+
+.pmpbooking#pmpbooking .upcoming .pmpbooking-places-remaining {
+    margin-top: .5em;
+}
+
+@media (min-width: 550px) {
+    .pmpbooking#pmpbooking .upcoming .pmpbooking-event-full,
+    .pmpbooking#pmpbooking .upcoming .pmpbooking-places-remaining {
+        vertical-align: top;
+        margin-top: .5em;
+        margin-bottom: 0;
+    }
+
+    .pmpbooking#pmpbooking .upcoming .pmpbooking-places-remaining {
+        margin-left: 1em;
+    }
+
+    .pmpbooking#pmpbooking .upcoming .pmpbooking-event-full {
+        margin-right: 1em;
+    }
+}
+
+
+
+/* Event template */
+
+.pmpbooking#pmpbooking .pmpbooking-list.events {
+    margin-bottom: 1.5em;
+    width: 100%;
+    clear: both;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.events .pmpbooking-event {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: .5em;
+    padding: 0;
+    border: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.template-online-activities .pmpbooking-online-activity,
+.pmpbooking#pmpbooking .pmpbooking-list.events .pmpbooking-event {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.events .pmpbooking-event:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.template-online-activities .pmpbooking-online-activity:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.template-online-activities .pmpbooking-online-activity {
+    clear: both;
+    width: 100%;
+    padding: 1.5em 1.8em;
+    line-height: 1.8;
+    margin: .5em 0;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.template-online-activities .pmpbooking-online-activity h3 {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: .3em;
+    line-height: 1;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-head {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-event-head,
+.pmpbooking#pmpbooking .pmpbooking-event-body  {
+    padding: 1.2em 1.5em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-event-head {
+    border-bottom: 2px solid white;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-event-body {
+    line-height: 2;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-event-head .pmpbooking-date {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.events .pmpbooking-event-registration,
+.pmpbooking#pmpbooking .pmpbooking-list.events .pmpbooking-oa-registration {
+    margin-top: 1em;
+    text-align: left;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-event_tags-list > li {
+    display: inline-block;
+    padding: .4em .7em;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: .3em;
+    margin-bottom: .3em;
+    line-height: 1;
+    background-color: white;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-suggest,
+.pmpbooking#pmpbooking .pmpbooking-content-fields {
+    clear: both;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-suggest {
+    text-align: center;
+    padding: .5em 1em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-suggest-private-datelocation {
+    text-align: center;
+    padding: .5em 1em;
+    clear: both;
+    background-color: #f8f8f8;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-content-field {
+    margin-bottom: 3em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-event-offers {
+    font-weight: bold;
+}
+
+.pmpbooking#pmpbooking .replaced {
+    text-decoration: line-through;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-no-results {
+    padding: 1em 2em;
+    text-align: center;
+    font-size: 1em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-register-private-interest {
+    padding: 1em 2em;
+    text-align: center;
+    font-size: 1em;
+}
+
+.pmpbooking#pmpbooking p.pmpbooking-suggest-private-datelocation {
+    margin-bottom: 0.5em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-places-remaining {
+    font-weight: bold;
+    display: block;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-show-more-link-container {
+    text-align: center;
+    margin-bottom: 1em;
+    clear: both;
+}
+
+.pmpbooking#pmpbooking .button.pmpbooking-waiting-list {
+    background-color: white;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-tooltip-button {
+    font-weight: bold;
+    text-align: left;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-event .pmpbooking-event-full {
+    display: block;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-timezone-toggle {
+    float: right;
+}
+.pmpbooking#pmpbooking .pmpbooking-timezone-selector {
+    float: right;
+}
+
+
+
+/* Event search list */
+
+.pmpbooking#pmpbooking .event-search {
+    margin-bottom: 1em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-search {
+    margin-bottom: 1em;
+}
+
+.pmpbooking#pmpbooking input.pmpbooking-search-field,
+.pmpbooking#pmpbooking input.pmpbooking-search-field:focus {
+    padding: 1em;
+    background-color: transparent;
+}
+
+.pmpbooking#pmpbooking .event-search > li {
+    margin-bottom: 1em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-next-running > a,
+.pmpbooking#pmpbooking .pmpbooking-next-running > span  {
+    margin-left: 0.5em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-next-running {
+    margin-top: 1em;
+}
+
+.pmpbooking#pmpbooking .event-search .pmpbooking-next-running a,
+.pmpbooking#pmpbooking .event-search .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link a {
+    font-size: .9em;
+    padding: .5em .8em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-search-field,
+.pmpbooking#pmpbooking .pmpbooking-search-button {
+    width: 100%;
+}
+
+@media (min-width: 550px) {
+    .pmpbooking#pmpbooking .pmpbooking-search-field,
+    .pmpbooking#pmpbooking .pmpbooking-search-button {
+        display: inline-block;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-search-field {
+        width: 79%;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-search-button {
+        width: 20%;
+    }
+}
+
+@media (min-width: 750px) {
+    .pmpbooking#pmpbooking .pmpbooking-search-field {
+        width: 84%;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-search-button {
+        width: 15%;
+    }
+}
+
+.pmpbooking#pmpbooking .event-search .pmpbooking-offers {
+    margin-top: .5em;
+}
+
+
+
+/* Venue and presenter lists */
+
+.pmpbooking#pmpbooking .venues,
+.pmpbooking#pmpbooking .presenters {
+    margin-bottom: 2em;
+}
+
+.pmpbooking#pmpbooking .venues .pmpbooking-cf,
+.pmpbooking#pmpbooking .presenters .pmpbooking-cf {
+    border-bottom-width: 1px;
+    border-bottom-style: solid; 
+    padding-bottom: 2.5em;
+}
+
+.pmpbooking#pmpbooking .presenter-events li {
+    width: 320px;
+    vertical-align: top;
+    float: left;
+    min-height: 170px;
+    padding: 1em 1.5em;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 1.2em;
+    max-width: 100%;
+}
+
+@media (min-width: 550px) {
+    .pmpbooking#pmpbooking .pmpbooking-social-media a {
+        margin-right: .5em;
+    }
+}
+
+
+
+/* Sessions tooltips */
+
+.pmpbooking .dark-tooltip {
+    padding: 1em;
+}
+
+.pmpbooking .dark-tooltip h5,
+.pmpbooking .dark-tooltip h6 {
+    margin: 0;
+}
+
+.pmpbooking .dark-tooltip h5 {
+    font-size: 1.4em;
+}
+
+.pmpbooking .pmpbooking_session {
+    margin-top: .5em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pmpbooking .pmpbooking_session:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+
+/* Filters */
+
+.pmpbooking#pmpbooking .pmpbooking-filters {
+    overflow: auto;
+    margin-bottom: 1em;
+}
+
+.pmpbooking#pmpbooking select,
+.pmpbooking#pmpbooking .pmpbooking-filters-buttons,
+.pmpbooking#pmpbooking .pmpbooking-filters-buttons a {
+    width: 100%;
+}
+
+@media (min-width: 750px) {
+    .pmpbooking#pmpbooking select,
+    .pmpbooking#pmpbooking .pmpbooking-filters-buttons,
+    .pmpbooking#pmpbooking .pmpbooking-filters-buttons a {
+        width: auto;
+    }
+
+    .pmpbooking#pmpbooking select,
+    .pmpbooking#pmpbooking select:focus {
+        margin-right: .5em;
+    }
+}
+
+.pmpbooking#pmpbooking select {
+    border: none;
+    margin-bottom: .5em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-filters-buttons {
+    display: inline-block;
+    margin-top: 0;
+}
+
+.pmpbooking#pmpbooking select,
+.pmpbooking#pmpbooking .pmpbooking-filters-buttons {
+    float: left;
+}
+
+.pmpbooking#pmpbooking select.pmpbooking-filter-region {
+    float: none;
+}
+
+
+.pmpbooking#pmpbooking .pmpbooking-region-selector {
+    border: solid 1px transparent;
+    margin: 1em 0px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-region-selector select.pmpbooking-filter-region {
+    min-width: 400px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-event-template-filters .pmpbooking-filters {
+    float: left;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-timezone-selector {
+    float: right;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-timezone-selector p {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-timezone-selector form {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+/* Pagination */
+
+.pmpbooking#pmpbooking .pmpbooking-pagination {
+    overflow: auto;
+}
+
+.pmpbooking#pmpbooking .page-numbers.prev,
+.pmpbooking#pmpbooking .page-numbers.next {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.pmpbooking#pmpbooking .page-numbers {
+    display: inline-block;
+}
+
+@media (min-width: 550px) {
+    .pmpbooking#pmpbooking .page-numbers {
+        float: left;
+    }
+
+    .pmpbooking#pmpbooking .page-numbers.prev,
+    .pmpbooking#pmpbooking .page-numbers.next {
+        margin-top: .1em;
+        margin-bottom: .1em;
+    }
+}
+
+@media (min-width: 750px) {
+    .pmpbooking#pmpbooking .page-numbers.prev {
+        margin-right: 1em;
+    }
+
+    .pmpbooking#pmpbooking .page-numbers.next {
+        margin-left: 1em;
+    }
+}
+
+.pmpbooking#pmpbooking .page-numbers:not(.next):not(.prev) {
+    margin: .5em;
+    font-weight: bold;
+}
+
+
+
+/* Upcoming events list widget */
+
+.pmpbooking-widget-upcoming > li {
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.pmpbooking-widget-upcoming > li p {
+    font-weight: bold;
+}
+
+.pmpbooking-widget-upcoming > li p:last-child {
+    font-weight: normal;
+}
+
+.pmpbooking-widget-upcoming .pmpbooking-cal.pmpbooking-left {
+    width: 24%;
+    font-weight: bold;
+    padding: .75em 0;
+    border-right: 2px solid transparent;
+}
+
+.pmpbooking-widget-upcoming .pmpbooking-cal-month,
+.pmpbooking-widget-upcoming .pmpbooking-cal-day {
+    width: 100%;
+}
+
+.pmpbooking-widget-upcoming .pmpbooking-cal-month {
+    padding: 0;
+    border: none;
+    line-height: 1;
+    background-color: transparent;
+    font-size: 1.1em;
+}
+
+.pmpbooking-widget-upcoming .pmpbooking-cal-day {
+    border: none;
+    font-size: 2.5em;
+    padding: 0;
+    line-height: 1;
+    margin-top: .2em;
+}
+
+
+
+/* Category list widget */
+
+.pmpbooking-categories-widget li {
+    border-bottom: 0;
+    padding: 0;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.pmpbooking-categories-widget li a {
+    display: block;
+    padding: .3em .8em;
+    border-bottom: none;
+    margin-bottom: 0;
+    border-left: 2px solid transparent;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.pmpbooking-categories-widget li a:hover {
+    border-left-width: 4px;
+}
+
+
+
+/* Online activities list */
+
+.pmpbooking#pmpbooking .pmpbooking-online-activities .pmpbooking-online-activity {
+    margin-bottom: 3em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-online-activities .pmpbooking-online-activity .pmpbooking-reference-term {
+    border-left-width: 2px;
+    border-left-style: solid;
+    display:inline-block;
+    padding: .3em 1em;
+    margin-bottom: .5em;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-online-activities .pmpbooking-online-activity .pmpbooking-event-offers {
+    margin-bottom: 1em;
+}
+
+#pmpbooking.pmpbooking .pmpbooking-online-activities .pmpbooking-cf.pmpbooking-group-divider {
+    margin-bottom: 0;
+}
+
+
+
+
+/* Schedule */
+
+#pmpbooking.pmpbooking .schedule .pmpbooking-schedule-event {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding: 1em 0;
+}
+
+#pmpbooking.pmpbooking .schedule .pmpbooking-next-running {
+    margin-top: 0;
+    color: transparent;
+}
+
+#pmpbooking.pmpbooking .schedule .pmpbooking-group-divider {
+    margin-top: 2em;
+}
+
+#pmpbooking.pmpbooking .schedule .pmpbooking-template-name {
+    font-weight: bold;
+}
+
+@media (min-width: 750px) {
+    #pmpbooking.pmpbooking .schedule .pmpbooking-schedule-event {
+        padding: .3em 0;
+    }
+
+    #pmpbooking.pmpbooking .schedule .pmpbooking-schedule-column {
+        float: left;
+        min-height: 1px;
+        padding: .2em;
+    }
+
+    #pmpbooking.pmpbooking .schedule .pmpbooking-event-name {
+        width: 40%;
+    }
+
+    #pmpbooking.pmpbooking .schedule .pmpbooking-duration {
+        width: 15%;
+    }
+
+    #pmpbooking.pmpbooking .schedule .pmpbooking-template-details {
+        width: 15%;
+    }
+
+    #pmpbooking.pmpbooking .schedule .pmpbooking-next-running {
+        width: 30%;
+        text-align: right;
+    }
+
+}
+
+
+
+
+/* Colours */
+
+.pmpbooking#pmpbooking .pmpbooking-color1,
+.pmpbooking#pmpbooking a:hover,
+.pmpbooking#pmpbooking a.pmpbooking-template-name,
+.pmpbooking#pmpbooking a.pmpbooking-template-name:hover,
+.pmpbooking#pmpbooking .page-numbers:not(.next):not(.prev):hover,
+.pmpbooking#pmpbooking .page-numbers.current:not(.next):not(.prev),
+.pmpbooking#pmpbooking .upcoming .pmpbooking-places-remaining,
+.pmpbooking#pmpbooking .button.pmpbooking-waiting-list:hover,
+.pmpbooking#pmpbooking .pmpbooking-event_tags-list > li,
+.pmpbooking#pmpbooking .pmpbooking-event-offers .discount,
+.pmpbooking#pmpbooking .pmpbooking-social-media a:hover,
+.pmpbooking-widget-upcoming a:hover,
+.pmpbooking-categories-widget li a:hover,
+.pmpbooking#pmpbooking a,
+.pmpbooking#pmpbooking a.next.page-numbers:hover, 
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a:hover,
+.pmpbooking#pmpbooking .upcoming .pmpbooking-event-name a:hover {
+    color: #f97070;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-background-color1,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-category-list a,
+.pmpbooking#pmpbooking .button.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-button,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running a.pmpbooking-register {
+    background-color: #f97070;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-border-color1,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf.pmpbooking-catalogue-event,
+.pmpbooking-categories-widget li a,
+.pmpbooking-widget-upcoming .pmpbooking-cal.pmpbooking-left,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates tr,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates tr td:first-of-type {
+    border-left-color: #f97070;
+    border-right-color: #f97070;
+    border-top-color: #f97070;
+    border-bottom-color: #f97070;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-color2 {
+    color: #f8f8f8;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-background-color2,
+.pmpbooking#pmpbooking .prev.page-numbers,
+.pmpbooking#pmpbooking .next.page-numbers,
+.pmpbooking#pmpbooking select,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running a,
+.pmpbooking#pmpbooking .upcoming .button.pmpbooking-waiting-list,
+.pmpbooking#pmpbooking .presenter-events li,
+.pmpbooking#pmpbooking .pmpbooking-social-media a,
+.pmpbooking-widget-upcoming .pmpbooking-cal.pmpbooking-left,
+.pmpbooking-categories-widget li a,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a {
+    background-color: #f8f8f8;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-border-color2 {
+    border-color: #f8f8f8;
+}
+
+.pmpbooking#pmpbooking,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a,
+.pmpbooking#pmpbooking .pmpbooking-category-list a,
+.pmpbooking#pmpbooking .pmpbooking-color3,
+.pmpbooking#pmpbooking .button.pmpbooking-waiting-list,
+.pmpbooking#pmpbooking .pmpbooking-social-media a,
+.pmpbooking-widget-upcoming .pmpbooking-cal-month,
+.pmpbooking-widget-upcoming a,
+.pmpbooking-categories-widget a,
+.pmpbooking#pmpbooking a.next.page-numbers, 
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a,
+.pmpbooking#pmpbooking .upcoming .pmpbooking-event-name a,
+.pmpbooking#pmpbooking select,
+#pmpbooking.pmpbooking .schedule .pmpbooking-template-name {
+    color: #383838;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-background-color3,
+.pmpbooking#pmpbooking .pmpbooking-filters-buttons a,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-show-more-link {
+    background-color: #383838;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-button,
+.pmpbooking#pmpbooking .button,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-category-list a,
+.pmpbooking#pmpbooking .pmpbooking-filters-buttons a,
+.pmpbooking#pmpbooking .button.pmpbooking-register:hover,
+.pmpbooking#pmpbooking .pmpbooking-show-more-link,
+.pmpbooking#pmpbooking .pmpbooking-show-more-link:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a.pmpbooking-register:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link a.pmpbooking-register:hover,
+.pmpbooking#pmpbooking .pmpbooking-oa-registration .pmpbooking-register:hover {
+    color: white;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-color4 {
+    color: #f9b3b3;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-background-color4 {
+    color: #f9b3b3;
+}
+
+
+/* Suggest templates */
+
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates tr td,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates tr td:first-of-type {
+    border-bottom: 1px solid white;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates tr td:first-of-type {
+    border-left-width: 2px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link {
+    text-align: right;
+}
+
+.pmpbooking-breadcrumbs ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 1em 0;
+}
+.pmpbooking-breadcrumbs li{
+    display: inline-block;
+}
+.pmpbooking-breadcrumbs li:not(:last-child)::after{
+    content: '>';
+    padding-left: 3px;
+    padding-right: 5px;
+}
+
+.pmpbooking-single-show-wrapper{
+  clear: both;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+
 /*Public CSS*/
+.limited-seats {
+	margin-left: 50px;
+    background-color: #e05e5e;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+	font-weight: 600;
+}
+
+
+/* Colours */
+
+.pmpbooking#pmpbooking .pmpbooking-color1,
+.pmpbooking#pmpbooking a:hover,
+.pmpbooking#pmpbooking a.pmpbooking-template-name,
+.pmpbooking#pmpbooking a.pmpbooking-template-name:hover,
+.pmpbooking#pmpbooking .page-numbers:not(.next):not(.prev):hover,
+.pmpbooking#pmpbooking .page-numbers.current:not(.next):not(.prev),
+.pmpbooking#pmpbooking .upcoming .pmpbooking-places-remaining,
+.pmpbooking#pmpbooking .button.pmpbooking-waiting-list:hover,
+.pmpbooking#pmpbooking .pmpbooking-event_tags-list>li,
+.pmpbooking#pmpbooking .pmpbooking-event-offers .discount,
+.pmpbooking#pmpbooking .pmpbooking-social-media a:hover,
+.pmpbooking-widget-upcoming a:hover,
+.pmpbooking-categories-widget li a:hover,
+.pmpbooking#pmpbooking a,
+.pmpbooking#pmpbooking a.prev.page-numbers:hover,
+.pmpbooking#pmpbooking a.next.page-numbers:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a:hover,
+.pmpbooking#pmpbooking .upcoming .pmpbooking-event-name a:hover {
+    color: #1F90A6;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-background-color1,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-category-list a,
+.pmpbooking#pmpbooking .button.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-button,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running a.pmpbooking-register {
+    background-color: #1F90A6;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-border-color1,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf.pmpbooking-catalogue-event,
+.pmpbooking-categories-widget li a,
+.pmpbooking-widget-upcoming .pmpbooking-cal.pmpbooking-left,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates tr,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates tr td:first-of-type {
+    border-left-color: #1F90A6;
+    border-right-color: #1F90A6;
+    border-top-color: #1F90A6;
+    border-bottom-color: #1F90A6;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-color2 {
+    color: #f8d053;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-background-color2,
+.pmpbooking#pmpbooking .prev.page-numbers,
+.pmpbooking#pmpbooking .next.page-numbers,
+.pmpbooking#pmpbooking select,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running a,
+.pmpbooking#pmpbooking .upcoming .button.pmpbooking-waiting-list,
+.pmpbooking#pmpbooking .presenter-events li,
+.pmpbooking#pmpbooking .pmpbooking-social-media a,
+.pmpbooking-widget-upcoming .pmpbooking-cal.pmpbooking-left,
+.pmpbooking-categories-widget li a,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a {
+    background-color: #f8d053;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-border-color2 {
+    border-color: #f8d053;
+}
+
+.pmpbooking#pmpbooking,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a,
+.pmpbooking#pmpbooking .pmpbooking-category-list a,
+.pmpbooking#pmpbooking .pmpbooking-color3,
+.pmpbooking#pmpbooking .button.pmpbooking-waiting-list,
+.pmpbooking#pmpbooking .pmpbooking-social-media a,
+.pmpbooking-widget-upcoming .pmpbooking-cal-month,
+.pmpbooking-widget-upcoming a,
+.pmpbooking-categories-widget a,
+.pmpbooking#pmpbooking a.next.page-numbers,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a,
+.pmpbooking#pmpbooking .upcoming .pmpbooking-event-name a,
+.pmpbooking#pmpbooking select,
+#pmpbooking.pmpbooking .schedule .pmpbooking-template-name {
+    color: #000;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-background-color3,
+.pmpbooking#pmpbooking .pmpbooking-filters-buttons a,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-show-more-link {
+    background-color: #000;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-button,
+.pmpbooking#pmpbooking .button,
+.pmpbooking#pmpbooking .pmpbooking-filters .pmpbooking-search:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-category-list a,
+.pmpbooking#pmpbooking .pmpbooking-filters-buttons a,
+.pmpbooking#pmpbooking .button.pmpbooking-register:hover,
+.pmpbooking#pmpbooking .pmpbooking-show-more-link,
+.pmpbooking#pmpbooking .pmpbooking-show-more-link:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a.pmpbooking-register:hover,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running span,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link a.pmpbooking-register,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link a.pmpbooking-register:hover,
+.pmpbooking#pmpbooking .pmpbooking-oa-registration .pmpbooking-register:hover {
+    color: white;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-button:after,
+.pmpbooking#pmpbooking .button:after,
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-next-running a:after,
+.pmpbooking#pmpbooking .pmpbooking-list.schedule .pmpbooking-next-running a:after,
+.pmpbooking#pmpbooking .prev.page-numbers:after,
+.pmpbooking#pmpbooking .next.page-numbers:after,
+.pmpbooking#pmpbooking .pmpbooking-category-list a:after,
+.pmpbooking#pmpbooking .pmpbooking-show-more-link:after,
+.pmpbooking#pmpbooking .pmpbooking-social-media a:after,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a:after,
+.pmpbooking#pmpbooking .pmpbooking-suggest-template-container .pmpbooking-suggest-templates .pmpbooking-suggest-template-event-link a:after,
+.pmpbooking#pmpbooking .pmpbooking-list.event-search .pmpbooking-next-running a:after {
+    content: none;
+}
+
+.pmpbooking#pmpbooking .button,
+.pmpbooking#pmpbooking .pmpbooking-category-list li a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #1F90A6;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-category-list li a {
+    padding: 10px 15px;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pmpbooking#pmpbooking .button {
+    text-transform: uppercase;
+}
+
+.pmpbooking#pmpbooking .button:hover,
+.pmpbooking#pmpbooking .pmpbooking-category-list li a:hover {
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%);
+}
+
+.pmpbooking#pmpbooking .pmpbooking-filters-label {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "Poppins", Helvetica, Arial, sans-serif !important;
+    text-transform: uppercase;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-filters-buttons .button {
+    background-color: #444444;
+    -webkit-box-shadow: 0px 4px #1f1f1f;
+            box-shadow: 0px 4px #1f1f1f;
+    border-radius: 4px;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    line-height: 1.3;
+}
+
+
+/* Upcoming list */
+
+.pmpbooking#pmpbooking .pmpbooking-filters-container {
+    margin-bottom: 50px;
+}
+
+.pmpbooking#pmpbooking form.pmpbooking-filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 0 10px;
+}
+
+.pmpbooking#pmpbooking div.pmpbooking-filters {
+    position: relative;
+    min-width: 300px;
+    margin: 0 20px 10px 0;
+    background: white;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0px 10px #00000017;
+            box-shadow: 0 0px 10px #00000017;
+}
+
+@media (max-width: 767px) {
+    .pmpbooking#pmpbooking div.pmpbooking-filters {
+        width: 100%;
+        min-width: 100%;
+        margin-right: 0;
+    }
+}
+
+.pmpbooking#pmpbooking div.pmpbooking-filters:after {
+    color: white;
+    content: "\f107";
+    font-family: "fontello";
+    position: absolute;
+    background: #2090a6;
+    width: 28px;
+    height: 28px;
+    top: 9px;
+    right: 10px;
+    line-height: 21px;
+    padding: 4px;
+    border-radius: 50%;
+    font-size: 28px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pmpbooking#pmpbooking div.pmpbooking-filters select {
+    float: none;
+    margin: 0;
+    display: block;
+    width: 100%;
+    background: transparent;
+    z-index: 1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-list-group {
+    background: #fff;
+    margin-bottom: 60px;
+    padding: 20px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0px 10px #00000017;
+            box-shadow: 0 0px 10px #00000017;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-list-group ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-list-group .pmpbooking-group-divider,
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-list-group .pmpbooking-group-divider h3 {
+    margin: 0;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-list-group .pmpbooking-events > li:not(.pmpbooking-group-divider) {
+    padding: 40px 40px 40px 0;
+}
+
+@media (max-width: 767px) {
+    .pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-list-group .pmpbooking-events > li:not(.pmpbooking-group-divider) {
+        padding-right: 20px;
+    }
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-list-group .pmpbooking-events > li:not(.pmpbooking-group-divider):not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-icon-toggle {
+    float: right;
+    font-style: normal;
+    font-size: 27px;
+    background: #2090a6;
+    width: 28px;
+    height: 28px;
+    margin-top: -5px;
+    margin-right: -5px;
+    line-height: 21px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-icon-toggle::before {
+    color: white;
+    content: "\f106";
+    font-family: "fontello";
+    display: block;
+    height: 28px;
+    padding: 1px 6px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-list-group.collapsed .pmpbooking-icon-toggle {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-cal {
+    width: 110px;
+    margin-right: 30px;
+    padding: 35px 10px;
+    background: #f8d053;
+    border-right: none;
+    border-radius: 4px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-cal .pmpbooking-day {
+    font-size: 72px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-cal .pmpbooking-month {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+    .pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-cal {
+        width: 55px;
+        margin-right: 20px;
+        padding: 20px 10px;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-cal .pmpbooking-day {
+        font-size: 36px;
+    }
+    
+    .pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-cal .pmpbooking-month {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-event-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 0;
+    position: relative;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-event-info .pmpbooking-event-details {
+    width: 70%;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-event-info .pmpbooking-registration {
+    margin-top: 36px;
+}
+
+@media (max-width: 991px) {
+    .pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-event-info .pmpbooking-event-details,
+    .pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-event-info .pmpbooking-registration {
+        width: 100%;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-event-info .pmpbooking-registration {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-list.upcoming .pmpbooking-event-info .pmpbooking-registration .pmpbooking-register {
+        margin-top: 13px;
+    }
+}
+
+.pmpbooking#pmpbooking .pmpbooking-event-location a {
+    pointer-events: none;
+    color: #000;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-registration {
+    text-align: center;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-view-all {
+    margin: 0 20px;
+    color: #000;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
+.pmpbooking .dark-tooltip h5 {
+    color: white;
+}
+
+.pmpbooking .dark-tooltip h6 {
+    font-size: 16px;;
+}
+
+/* Pagination */
+
+.pmpbooking#pmpbooking .pmpbooking-pagination {
+    text-align: center;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-pagination .page-numbers {
+    float: none;
+    border: none;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.pmpbooking#pmpbooking a.prev.page-numbers,
+.pmpbooking#pmpbooking a.next.page-numbers {
+	display: inline-block;
+    margin: 0;
+    padding: 15px 30px;
+    background-color: transparent;
+    color: #000;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.pmpbooking#pmpbooking .page-numbers:not(.next):not(.prev) {
+	width: 20px;
+    color: #000;
+}
+
+
+/* Catalogue */
+
+.pmpbooking#pmpbooking .catalogue {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.pmpbooking#pmpbooking #pmpbooking-event-filter .pmpbooking-filters-buttons {
+    display: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf.pmpbooking-catalogue-event {
+    width: 33.33333%;
+    padding: 10px;
+    border: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf.pmpbooking-catalogue-event:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf.pmpbooking-group-divider {
+    width: 100%;
+    padding: 10px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-catalogue-event-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 10px #00000017;
+            box-shadow: 0 0 10px #00000017;
+    overflow: hidden;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-template-header {
+    position: relative;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-template-name {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-template-image {
+    height: 234px;
+    background: url(/wp-content/uploads/2021/03/course-no-logo.jpg) no-repeat;
+    background-size: cover;
+    text-align: right;
+    overflow: hidden;
+    transition: height 0.2s ease-out;
+    -webkit-transition: height 0.2s ease-out;
+    -moz-transition: height 0.2s ease-out;
+    -ms-transition: height 0.2s ease-out;
+    -o-transition: height 0.2s ease-out;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-catalogue-event-wrapper:hover .pmpbooking-template-image {
+    height: 130px;
+}
+
+@media (max-width: 1199px) {
+    .pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-template-image {
+        height: 190px;
+    }
+}
+
+@media (max-width: 991px) {
+    .pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf.pmpbooking-catalogue-event {
+        width: 50%;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-template-image {
+        height: 225px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .pmpbooking#pmpbooking .pmpbooking-list.catalogue .pmpbooking-cf.pmpbooking-catalogue-event {
+        width: 100%;
+    }
+}
+
+.pmpbooking#pmpbooking .catalogue .pmpbooking-template-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    min-height: 110px;
+    padding: 15px 20px;
+    background: white;
+}
+
+.pmpbooking#pmpbooking .catalogue .pmpbooking-template-details .pmpbooking-template-summary {
+    height: 1px;
+    color: #626262;
+    line-height: 1.3;
+    overflow: hidden;
+    transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+}
+
+.pmpbooking#pmpbooking .catalogue .pmpbooking-catalogue-event-wrapper:hover .pmpbooking-template-summary {
+    height: 94px;
+    margin-bottom: 10px;
+}
+
+.pmpbooking#pmpbooking .catalogue .pmpbooking-template-details .pmpbooking-template-tags:before,
+.pmpbooking#pmpbooking .catalogue .pmpbooking-template-details .pmpbooking-template-offers:before {
+    content: "";
+    width: 30px;
+    height: 25px;
+    display: block;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.pmpbooking#pmpbooking .catalogue .pmpbooking-template-details .pmpbooking-template-tags:before {
+    background-image: url(/wp-content/uploads/2021/03/icon-price.png);
+}
+
+.pmpbooking#pmpbooking .catalogue .pmpbooking-template-details .pmpbooking-template-offers:before {
+    background-image: url(/wp-content/uploads/2021/03/icon-course-tag.png);
+}
+
+.pmpbooking#pmpbooking .catalogue .pmpbooking-template-next-running a {
+    display: block;
+    padding: 8px 20px;
+    background: #f1d069;
+    color: #000;
+    font-size: 15px;
+}
+
+.pmpbooking#pmpbooking .catalogue .pmpbooking-template-next-running a:hover {
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+}
+
+
+/* Dates only */
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only {
+    padding: 30px 40px 40px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 30px 50px #00000047;
+            box-shadow: 0 30px 50px #00000047;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-title {
+    text-align: center;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-filters-container {
+    margin-bottom: 0;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-filters {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-filters:after {
+    content: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-filters .pmpbooking-filter {
+    position: relative;
+    width: 43.5%;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-filters select {
+    padding: 20px 16px 6px 10px;
+    background: white;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.02em;
+    -webkit-box-shadow: inset 1px 2px 0 rgb(0 0 0 / 6%);
+            box-shadow: inset 1px 2px 0 rgb(0 0 0 / 6%);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(/wp-content/themes/kallyas/images/select-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 6px 12px;
+    background-position: calc(100% - 10px) 50%;
+    background-position-y: center;
+    background-position-x: calc(100% - 10px);
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-filters label {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    margin-bottom: 0;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #969696;
+    z-index: 9;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-filters .pmpbooking-search {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #444444;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-filters {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    
+    .pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-filters .pmpbooking-filter {
+        width: 50%;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-filters .pmpbooking-search {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-filters .pmpbooking-filter {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-list.dates-only {
+    display: none;
+    margin-top: 15px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event {
+	margin-bottom: 10px;
+    background: #ffe184;
+    border-radius: 4px;
+    position: relative;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-event-info,
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-session-info {
+    width: 100%;
+    padding: 15px 25px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event.hasSession .pmpbooking-event-info,
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-session-info {
+    display: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event.hasSession .pmpbooking-session-info {
+    display: block;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-sessions {
+    padding-left: 0;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-sessions li {
+    list-style: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-event-session {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-session {
+    border-top: 1px solid #f8d053;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-session:first-child {
+    border-top: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-date,
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-name,
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-offers,
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-registration {
+    padding: 10px 15px 15px 0;
+  	line-height: 20px;
+}
+
+@media (max-width: 767px) {
+    .pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-event-session  {
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-event-session > div {
+        width: 100%;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-date,
+    .pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-name {
+        padding-bottom: 0;
+    }
+
+    .pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-modal-toggle {
+        position: absolute;
+        right: 25px;
+        top: 10px;
+    }
+  
+  	.pmpbooking.pmpbooking-search-result#pmpbooking .pmpbooking-event-info .pmpbooking-registration .pmpbooking-places-remaining {
+    	top: -15px!important;
+    	left: 0px!important;
+	}
+	.pmpbooking#pmpbooking .pmpbooking-template-dates-only {
+    padding: 15px 20px 10px;
+	}
+  
+   .pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-title {
+    font-size: 25px;
+	}
+}
+
+@media (min-width:768px) and (max-width: 991px)  {
+  	.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-name {
+    	width: 30%!important;
+	}
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-date {
+    width: 25%;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    line-height: 20px;
+	font-weight: 600;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-name {
+    width: 40%;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-location {
+	color: #e05e5e;  
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-location a {
+    color: #e05e5e!important;
+	text-decoration: underline;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-location a:hover {
+    text-decoration: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-offers {
+    width: 15%;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-registration {
+    width: 15%;
+    padding: 15px 0;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-modal-toggle {
+    width: 5%;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-register {
+    margin-bottom: 0;
+    font-size: 15px;
+    padding: 10px 15px;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-modal-toggle .elm-sc-icon {
+    font-size: 33px;
+    color: #444;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-modal-toggle:hover .elm-sc-icon {
+    color: #000;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-no-results,
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-search-no-result,
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-event .pmpbooking-hidden {
+    display: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-badge {
+    text-align: right;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-badge img {
+    height: 36px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-search-no-result {
+    padding: 15px 20px 20px;
+    background: #ffe184;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-search-no-result p {
+    margin: 0;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-powered-by {
+    display: none;
+}
+
+.pmpbooking.pmpbooking-search-result#pmpbooking .pmpbooking-event-info .pmpbooking-registration .pmpbooking-places-remaining {
+    background-color: #f97070;
+    color: #fff;
+    padding: 3px 10px 6px 10px;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-event-offers span.discount .amount {
+    text-decoration: none;
+}
+
+.pmpbooking#pmpbooking .pmpbooking-event-offers li:nth-of-type(2n) span.amount {
+    text-decoration: line-through;
+}
+
+
+.pmpbooking-badge:before {
+    float: left;
+    text-align: left;
+}
+
+.pmpbooking-offers .discount {
+    color: #f34e4e !important;
+}
+
+
+.pmpbooking#pmpbooking .pmpbooking-template-dates-only .pmpbooking-filters select {
+    text-align: left;
+}
+
+.pmpbooking-search-result .pmpbooking-price-tax {
+    display: none;
+}

@@ -1,0 +1,14 @@
+/*Public CSS*/
+.limited-seats {
+	margin-left: 50px;
+    background-color: #e05e5e;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+	font-weight: 600;
+}
+
+.lightRed {
+  background-color: #f0aaaa !important
+}
