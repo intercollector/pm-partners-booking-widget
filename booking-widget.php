@@ -290,3 +290,50 @@ function filterAndFormatWorkshops($wcVariations){
 	}
 	return $courses;
 }
+
+
+function create_attributes($post_id){
+    remove_action( 'woocommerce_new_product', 'create_attributes' );
+    wc_get_logger()->debug( 'create_attributes called' );
+    $WC_Product = wc_get_product( $post_id);
+
+    if($WC_Product != null){
+
+     wc_get_logger()->debug( 'creating product attributes called' );
+          $attribute = new WC_Product_Attribute();
+          $attribute->set_name('Type');
+          $attribute->set_options('');
+		  $attribute->set_variation(true);
+          $attributes[] = $attribute;
+          $attribute = new WC_Product_Attribute();
+          $attribute->set_name('StartDate');
+          $attribute->set_options('');
+		  $attribute->set_variation(true);
+          $attributes[] = $attribute;
+          $attribute = new WC_Product_Attribute();
+          $attribute->set_name('EndDate');
+          $attribute->set_options('');
+		  $attribute->set_variation(true);
+          $attributes[] = $attribute;
+          $attribute = new WC_Product_Attribute();
+          $attribute->set_name('Location');
+          $attribute->set_options('');
+		  $attribute->set_variation(true);
+          $attributes[] = $attribute;
+          $attribute = new WC_Product_Attribute();
+          $attribute->set_name('WorkshopId');
+          $attribute->set_options('');
+		  $attribute->set_variation(true);
+          $attributes[] = $attribute;
+        $WC_Product->set_attributes($attributes);
+        $WC_Product->save();
+        wc_get_logger()->debug( 'save called' );
+    }
+ 
+
+     add_action( 'woocommerce_new_product', 'create_attributes' );
+}
+
+ 
+
+add_action( 'woocommerce_new_product', 'create_attributes' );
