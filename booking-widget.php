@@ -246,7 +246,7 @@ function booking_widget_tab_data() {
 		 }
 	 }
 }
-//add_action( 'admin_enqueue_scripts', 'hide_edit_book_update' );
+add_action( 'admin_enqueue_scripts', 'hide_edit_book_update' );
 
 function filterAndFormatWorkshops($wcVariations){
 	$courses = [];
