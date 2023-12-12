@@ -336,4 +336,4 @@ function create_attributes($post_id){
 
  
 
-add_action( 'woocommerce_new_product', 'create_attributes' );
+//add_action( 'woocommerce_new_product', 'create_attributes' );

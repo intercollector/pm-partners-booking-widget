@@ -31,7 +31,7 @@
       </div>
     </div>
 	<div>
-	<div id="stripe-logo" class="pmpbooking-title" style="text-align:left"><img src="/wp-content/uploads/2023/05/powered-by-stripe-badge.png" style="max-width:25%;height:auto"/></div>
+	<div id="stripe-logo" class="pmpbooking-title" style="text-align:left"><img src="/powered-by-stripe-badge-2/" style="max-width:25%;height:auto"/></div>
 	<ul class="pmpbooking-list dates-only" style="display:block">
 		
 	<?php
